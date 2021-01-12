@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+body #bg {
+  -webkit-clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
+  width: 100%;
+  height: 100%;
+  background-color: #005DFF;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 840px) {
+  body #bg {
+    -webkit-clip-path: polygon(0 0, 75% 0, 55% 100%, 0 100%);
+            clip-path: polygon(0 0, 75% 0, 55% 100%, 0 100%);
+  }
+}
+
+body #bg header a {
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+}
+
+@media (min-width: 840px) {
+  body main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "primary card";
+  }
+}
+
+body main section#card {
+  background-color: #fff;
+  width: 80%;
+  margin: 1em auto;
+  border-radius: 15px;
+  padding: 20px;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 840px) {
+  body main section#card {
+    grid-area: card;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 1em;
+  }
+}
+
+body main section#card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body main section#card ul li {
+  padding-bottom: 10px;
+}
+
+body main section#card ul li span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #ccdfff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+body main section#card ul li strong {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+body main section#primary {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (min-width: 840px) {
+  body main section#primary {
+    grid-area: primary;
+    margin: 4em 0 0 4em;
+    text-align: left;
+  }
+}
+
+body main section#primary h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+@media (min-width: 840px) {
+  body main section#primary h1 {
+    width: 30%;
+    font-size: 4em;
+    line-height: 0.9em;
+  }
+}
+
+body main section#primary p {
+  font-size: 1.4rem;
+}
+
+body main section#primary a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  color: #001333;
+  padding: 15px;
+  background-color: #FFF6BB;
+  margin: 50px auto 0 auto;
+  border-radius: 15px;
+}
+
+@media (min-width: 840px) {
+  body main section#primary a {
+    display: inline-block;
+    padding: 15px 60px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
